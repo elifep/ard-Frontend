@@ -1,0 +1,47 @@
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 30;
+  /* Ensures sidebar is above main content */
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  /* Adjust based on your header height */
+  z-index: 40;
+  /* Ensures header is above sidebar and content */
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 56px;
+  /* Header height */
+  margin-left: 224px;
+  /* Sidebar width when expanded */
+  z-index: 20;
+  /* Content below sidebar and header */
+}
+.menu-item.active {
+  background-color: #4b5563; /* Daha koyu bir gri */
+  border-left: 4px solid #2563eb; /* Mavi vurgu */
+}
+
+/* Dropdown Menünün Doğru Görünmesi İçin Stil */
+.table-container {
+  position: relative;
+  /* Menüyü konumlandırmak için */
+  overflow: visible;
+  /* Tablonun sınırlarını aşmasına izin verir */
+}
+.responsive-table {
+  overflow-x: auto;
+  display: block;
+}
